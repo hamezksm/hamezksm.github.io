@@ -2,27 +2,47 @@
     <head>
         <title>Hiiiiii</title>
         <style>
-        p {
-        text-align: center;
-        font-size: 32px;
-        font-family: Candara, Oswald;
-        }
-        img {
-        display: block;
-        margin: 0 auto;
-        width: 25%;
-        }
-        #botao1 {
-            position: fixed;
-            top: 70%;
-            left: 55%;
-            transform: translate(-50%, -50%);
-        }
-        #botao2 {
-            position: absolute;
-            left: 39%;
-            top: 68%;
-        }
+            body{
+                background: #f2eee3;
+            }
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 60%;
+                left: 40%;
+                text-align: center;
+                font-size: 32px;
+                font-family: Candara, Oswald;
+            }
+            img {
+                position: relative;
+                top: 50px;
+                display: block;
+                margin: 0 auto;
+                width: 25%;
+            }
+            #botao1 {
+                position: fixed;
+                top: 80%;
+                left: 65%;
+            }
+            #botao2 {
+                position: absolute;
+                left: 35%;
+                top: 80%;
+
+            }
+            button{
+                width: 120px;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 10px 0;
+                background: rgba(233, 73, 180, 0.89);
+                color: antiquewhite;
+                font-family: sans-serif;
+            }
         </style>
     </head>
     <title>Botões</title>
@@ -34,15 +54,15 @@
         <button id="botao2">NO</button>
         <script>
             let button2 = document.getElementById('botao2');
-            let left = 30;
+            let left = 35;
             button2.addEventListener('mouseover', function() {
-                if(left == 30){
-                    left = 45;
-                }else if(left == 45){
-                    left = 37.5;
+                if(left == 35){
+                    left = 50;
+                }else if(left == 50){
+                    left = 42.5;
                 }
-                else if(left == 37.5){
-                    left = 30;
+                else if(left == 42.5){
+                    left = 35;
                 }
                 this.style.left = left + '%';
             });
