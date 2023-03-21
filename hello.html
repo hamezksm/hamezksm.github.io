@@ -33,18 +33,21 @@
         <button id="botao1">YES BABY!</button>
         <button id="botao2">NO</button>
         <script>
-            const button2 = document.getElementById('botao2');
-            let left = 40;
+            let button2 = document.getElementById('botao2');
+            let left = 30;
             button2.addEventListener('mouseover', function() {
-                if(left == 40){
-                    left = 44;
-                }else{
-                    left = 40;
+                if(left == 30){
+                    left = 45;
+                }else if(left == 45){
+                    left = 37.5;
+                }
+                else if(left == 37.5){
+                    left = 30;
                 }
                 this.style.left = left + '%';
             });
             document.getElementById('botao1').addEventListener('click', function() {
-                alert('YAYY THANK U LOVE U');
+                alert('YAYY THANK YOU. LOVE YOU. WE SHOULD DEFINITELY FUCK TOO😋😋');
             });
         </script>
     </body>
